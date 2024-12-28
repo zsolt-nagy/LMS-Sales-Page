@@ -60,7 +60,7 @@
             </nav>
         </header>
         <main>
-            <form action="#" method="GET" class="js-signup-form">
+            <form action="#" method="POST" class="js-signup-form">
                 <div class="column">
                     <h2 class="text-center">Sign Up</h2>
 
@@ -80,9 +80,10 @@
                             type="email"
                             id="email"
                             name="email"
-                            class="text-field"
+                            class="text-field js-email-field"
                             required
                         />
+                        <div class="error hidden js-email-validation"></div>
                     </div>
                     <div class="form-row">
                         <label for="password" class="form-label">
@@ -107,6 +108,7 @@
                             class="text-field js-password2"
                             required
                         />
+                        <div class="error hidden js-pwd-cross"></div>
                     </div>
                     <div class="form-row">
                         <input
@@ -172,16 +174,14 @@
                     <h3>Links</h3>
                     <ul>
                         <li><a href="#" class="footer-link">Sitemap</a></li>
-                        <li
-                            ><a href="#" class="footer-link"
-                                >Privacy Policy</a
-                            ></li
-                        >
-                        <li
-                            ><a href="#" class="footer-link"
+                        <li>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link"
                                 >Data Protection Policy</a
-                            ></li
-                        >
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
